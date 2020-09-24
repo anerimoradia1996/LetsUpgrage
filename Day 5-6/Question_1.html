@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .data 
+        {
+            height: 500px;
+            width: 60%;
+            background-color: rgb(177, 209, 247);
+            margin-left: 20%;
+            margin-top:50px;
+            padding: 20px;
+            display: inline-block;            
+        }
+
+        th,td
+        {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .form
+        {
+            margin-top: 20px;
+        }
+
+        input
+        {
+            height:40px;
+            text-indent: 20px;
+            width: 300px;
+        }
+
+        button
+        {
+            padding: 10px;
+        }
+
+        table
+        {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class = "data">
+        <h1>Personal Information</h1>
+
+        <div class = "form">
+            <input type = "text" placeholder = "Search Person" id = "searchPerson" onkeyup="searchByName()"/>
+            <input type = "text" placeholder = "Search City" id = "searchCity" onkeyup="searchByCity()"/>
+        </div>
+
+        <table border = "1" class = "table" cellspacing = "0">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody class = "tdata" id = "tdata"></tbody>
+            </thead>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="Question_1.js"></script>
+</body>
+</html>
